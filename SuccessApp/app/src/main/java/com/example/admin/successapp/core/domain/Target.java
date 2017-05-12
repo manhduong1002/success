@@ -1,4 +1,4 @@
-package com.example.admin.successapp.domain;
+package com.example.admin.successapp.core.domain;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -8,6 +8,7 @@ import java.util.Date;
  */
 
 public class Target implements Serializable {
+
 
     private static final int STATUS_NEW = 0;
 
