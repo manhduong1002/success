@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package infra;
+package com.example.admin.successapp.infra;
 
-import core.domain.Class;
-import core.domain.repository.ClassRepository;
+import com.example.admin.successapp.core.domain.Class;
+import com.example.admin.successapp.core.domain.repository.ClassRepository;
 
 /**
  *

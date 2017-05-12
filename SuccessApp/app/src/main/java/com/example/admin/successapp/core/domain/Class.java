@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package core.domain;
+package com.example.admin.successapp.core.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -104,7 +104,7 @@ public class Class {
         for (Subjects subjects : subjectses) {
             for (Student student : students) {
                 SubjectPoint subjectPoint = new SubjectPoint();
-                subjectPoint.setPoints(new ArrayList<>());
+                subjectPoint.setPoints(new ArrayList<Point>());
                 subjectPoint.setStudent(student);
                 subjectPoint.setSubjects(subjects);
                 subjectPoints.add(subjectPoint);

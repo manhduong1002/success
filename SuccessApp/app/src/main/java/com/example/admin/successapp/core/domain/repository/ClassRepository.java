@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package core.domain.repository;
+package com.example.admin.successapp.core.domain.repository;
 
-import core.domain.Class;
+import com.example.admin.successapp.core.domain.Class;
 
 /**
  *

@@ -3,15 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package core.domain;
+package com.example.admin.successapp.core.domain;
 
 /**
  *
  * @author admin
  */
 public class User {
+
     private String id;
+
     private String username;
+
     private String password;
 
     public String getId() {
