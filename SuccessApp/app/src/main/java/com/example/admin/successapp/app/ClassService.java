@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package app;
+package com.example.admin.successapp.app;
 
-import core.domain.Student;
-import core.domain.Class;
-import core.domain.repository.ClassRepository;
+import com.example.admin.successapp.core.domain.Student;
+import com.example.admin.successapp.core.domain.Class;
+import com.example.admin.successapp.core.domain.repository.ClassRepository;
 
 /**
  *
