@@ -10,22 +10,56 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-
-        <RelativeLayout
-            app:layout_widthPercent="20%"
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayoutYear"
-            android:background="@color/colorYearBlue"
-            android:layout_alignParentTop="true"
-            android:textAlignment="center"
-            >
-            <TextView
-                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+        <!-- Row 1 with single column -->
+            <TableRow
                 android:layout_height="wrap_content"
-                android:text="@string/year"
-                android:textAlignment="center"/>
-        </RelativeLayout>
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="1"
+                    android:background="#cce0ff"
+                    android:padding="18dip"
+                    android:text="2017"
+                    android:textColor="#000"
+                    android:textSize="28dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                     >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#cce0ff"
+                        android:padding="18dip"
+                        android:text="2017"
+                        android:textColor="#000"
+                        android:textSize="28dp"
+                        android:id="@+id/textView002"/>
+
+                    <Button
+                        android:layout_below="@+id/textView002"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add"
+                        android:textSize="28dp"/>
+
+                    </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
 
 </android.support.percent.PercentRelativeLayout>
     </RelativeLayout>
