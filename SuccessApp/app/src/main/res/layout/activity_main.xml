@@ -6,62 +6,235 @@
     android:layout_height="fill_parent"
     tools:context="com.example.admin.successapp.MainActivity">
 
-    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
 
-        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ffffff"
-            android:shrinkColumns="*"
-            android:stretchColumns="*">
+        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-        <!-- Row 1 with single column -->
-            <TableRow
-                android:layout_height="wrap_content"
-                android:layout_width="fill_parent"
-                android:gravity="center_horizontal">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_span="1"
-                    android:background="#cce0ff"
-                    android:padding="18dip"
-                    android:text="2017"
-                    android:textColor="#000"
-                    android:textSize="28dp" />
+                <!-- Row 1 with single column -->
 
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <TableRow
+                    android:id="@+id/rowYear"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_span="2"
-                     >
+                    android:gravity="center_horizontal">
+
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
                         android:background="#cce0ff"
                         android:padding="18dip"
                         android:text="2017"
                         android:textColor="#000"
-                        android:textSize="28dp"
-                        android:id="@+id/textView002"/>
+                        android:textSize="28dp" />
 
-                    <Button
-                        android:layout_below="@+id/textView002"
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Add"
-                        android:textSize="28dp"/>
+                        android:layout_span="2">
+
+                        <TextView
+                            android:id="@+id/textView002"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cce0ff"
+                            android:padding="18dip"
+                            android:text="2017"
+                            android:textColor="#000"
+                            android:textSize="28dp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView002"
+                            android:text="Add"
+                            android:textSize="28dp" />
 
                     </RelativeLayout>
-            </TableRow>
+                </TableRow>
 
-        </TableLayout>
 
-</android.support.percent.PercentRelativeLayout>
-    </RelativeLayout>
+                <TableRow
+                    android:id="@+id/rowPrecious"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:background="#cce0ff"
+                        android:text="Quy II"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2">
+
+                        <TextView
+                            android:id="@+id/textView003"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cce0ff"
+                            android:padding="18dip"
+                            android:text="2017"
+                            android:textColor="#000"
+                            android:textSize="28dp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView003"
+                            android:text="Add"
+                            android:textSize="28dp" />
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowMonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:background="#cce0ff"
+                        android:text="Tháng 6"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2">
+
+                        <TextView
+                            android:id="@+id/textView004"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cce0ff"
+                            android:padding="18dip"
+                            android:text="2017"
+                            android:textColor="#000"
+                            android:textSize="28dp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView004"
+                            android:text="Add"
+                            android:textSize="28dp" />
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowWeek"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:background="#cce0ff"
+                        android:text="Tuần 30"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2">
+
+                        <TextView
+                            android:id="@+id/textView005"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cce0ff"
+                            android:padding="18dip"
+                            android:text="2017"
+                            android:textColor="#000"
+                            android:textSize="28dp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView005"
+                            android:text="Add"
+                            android:textSize="28dp" />
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="1"
+                        android:background="#cce0ff"
+                        android:text="Thứ 2"
+                        android:textColor="#000"
+                        android:textSize="18dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2">
+
+                        <TextView
+                            android:id="@+id/textView006"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#cce0ff"
+                            android:padding="18dip"
+                            android:text="2017"
+                            android:textColor="#000"
+                            android:textSize="28dp" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView006"
+                            android:text="Add"
+                            android:textSize="28dp" />
+
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+    </ScrollView>
+</RelativeLayout>
 
 
