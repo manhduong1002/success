@@ -134,4 +134,17 @@ public class Target implements Serializable {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Target{" +
+                "id=" + id +
+                ", level=" + level +
+                ", expiryDate='" + expiryDate + '\'' +
+                ", title='" + title + '\'' +
+                ", name='" + name + '\'' +
+                ", parentId=" + parentId +
+                ", status=" + status +
+                '}';
+    }
 }
