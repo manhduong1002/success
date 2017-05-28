@@ -1,7 +1,6 @@
 package com.example.admin.successapp.core.domain;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * Created by admin on 5/12/2017.
@@ -19,7 +18,7 @@ public class Target implements Serializable {
     private static final int STATUS_FINISH = 3;
 
     // key
-    private String id;
+    private int id;
     // 0 year
     // 1 month
     // 2 week
@@ -27,7 +26,8 @@ public class Target implements Serializable {
     private int level;
 
     // axpiry date => finish
-    private Date expiryDate;
+    //18:30:00_13/04/2017
+    private String expiryDate;
 
     // title
     private String title;
@@ -35,7 +35,7 @@ public class Target implements Serializable {
     private String name;
 
     // key parent
-    private String parentId;
+    private int parentId;
 
     private int status;
 
@@ -43,11 +43,11 @@ public class Target implements Serializable {
         super();
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -59,11 +59,11 @@ public class Target implements Serializable {
         this.level = level;
     }
 
-    public Date getExpiryDate() {
+    public String getExpiryDate() {
         return expiryDate;
     }
 
-    public void setExpiryDate(Date expiryDate) {
+    public void setExpiryDate(String expiryDate) {
         this.expiryDate = expiryDate;
     }
 
@@ -83,11 +83,11 @@ public class Target implements Serializable {
         this.name = name;
     }
 
-    public String getParentId() {
+    public int getParentId() {
         return parentId;
     }
 
-    public void setParentId(String parentId) {
+    public void setParentId(int parentId) {
         this.parentId = parentId;
     }
 
